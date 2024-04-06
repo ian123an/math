@@ -4,9 +4,9 @@ using namespace std;
 
 int main() {
 	float a;
+	start:
 
 	cout << "enter a number" << endl;
-	start:
 	cin >> a;
 
 	if (a < 0)
@@ -16,5 +16,6 @@ int main() {
 	}
 
 	cout << sqrt(a) << endl;
-	return (0);
+	system ("pause");
+	//goto start;     //連續輸入
 }
