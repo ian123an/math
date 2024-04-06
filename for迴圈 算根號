@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    start:
+
+    cout << "輸入一數字" << endl;
+    cin >> a;
+
+    if (a < 0)
+    {
+        cout << "請勿輸入負數" << endl;
+        goto start;
+    }
+
+    for (b = 0; b <= a; b++)
+    {
+        if (b * b == a)
+            break;
+    }
+
+    if (b * b != a)
+        cout << "此數非完全平方根" << endl;
+    else
+        cout << "此數開根號後為:" << a << endl;
+    return (0);
+}
