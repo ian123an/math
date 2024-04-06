@@ -1,0 +1,20 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main() {
+	float a;
+
+	cout << "enter a number" << endl;
+	start:
+	cin >> a;
+
+	if (a < 0)
+	{
+		cout << "error  please don't enter Negative number" << endl;
+		goto start;
+	}
+
+	cout << sqrt(a) << endl;
+	return (0);
+}
