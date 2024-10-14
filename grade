@@ -1,24 +1,28 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
+ 
+void compute(int a)
+{
+    if (a > 100 || a < 0)
+    {
+        cout << "-1" << endl;
+    }
+    else if (a > 60)
+    {
+        a += 5;
+        cout << a << endl;
+    }
+    else
+    {
+        a += 10;
+        cout << a << endl;
+    }
+}
 
 int main()
 {
     int a;
     cin >> a;
-
-    if (a > 60 && a <= 100)
-    {
-        a = a + 10;
-        cout << a;
-    }
-    else if (a <= 60 && a >= 0)
-    {
-        a = a + 5;
-        cout << a;
-    }
-    else if (a > 100 || a < 0)
-    {
-        cout << "error";
-    }
-    
+    compute(a);
 }
